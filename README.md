@@ -4,7 +4,7 @@
 
 **Pre-built Vagrant Box**:
 
-  - [`vagrant init geerlingguy/centos8`](https://vagrantcloud.com/geerlingguy/boxes/centos8)
+  * [`vagrant init geerlingguy/centos8`](https://vagrantcloud.com/geerlingguy/boxes/centos8)
 
 This example build configuration installs and configures CentOS 8 x86_64 minimal using Ansible, and then generates a Vagrant box file for VirtualBox.
 
@@ -23,7 +23,7 @@ The following software must be installed/present on your local machine before yo
 
 Make sure all the required software (listed above) is installed, then cd to the directory containing this README.md file, and run:
 
-    $ packer build -var 'version=1.2.0' centos8.json
+`packer build -var 'version=1.2.0' centos8.json`
 
 After a few minutes, Packer should tell you the box was generated successfully, and the box was uploaded to Vagrant Cloud.
 
